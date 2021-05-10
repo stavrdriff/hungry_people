@@ -52,11 +52,22 @@ body {
   min-width: 150px;
 }
 
+.nav__logo:hover {
+  text-shadow: 0 0 2px 2px #fff;
+}
+
 .nav__link {
   text-decoration: none;
   color: #fff;
   font-family: "Open Sans";
   font-size: 0.85em;
   text-transform: uppercase;
+  -webkit-transition: linear 0.2s;
+  transition: linear 0.2s;
+}
+
+.nav__link:hover {
+  text-shadow: 0 2px 15px #fff;
+  color: #ffd600;
 }
 /*# sourceMappingURL=style.css.map */

@@ -38,6 +38,9 @@ body {
    &__logo {
       min-height: 150px;
       min-width: 150px;
+      &:hover {
+         text-shadow: 0 0 2px 2px #fff;
+      }
    }
    &__link {
       text-decoration: none;
@@ -45,5 +48,10 @@ body {
       font-family: "Open Sans";
       font-size: 0.85em;
       text-transform: uppercase;
+      transition: linear 0.2s;
+      &:hover {
+         text-shadow: 0 2px 15px #fff;
+         color: #ffd600;
+      }
    }
 }
