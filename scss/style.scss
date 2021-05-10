@@ -13,6 +13,19 @@ body {
    background-repeat: no-repeat;
    background-size: cover;
    padding-top: 25px;
+   &__center {
+      margin-top: 150px;
+   }
+   &__h4 {
+      margin: 0 auto;
+      color: #fff;
+      text-align: center;
+   }
+   &__h1 {
+      color: #fff;
+      margin: 0 auto;
+      text-align: center;
+   }
 }
 .container {
    width: 90%;
@@ -34,6 +47,7 @@ body {
    }
    &__item {
       margin-top: 20px;
+      min-width: 55px;
    }
    &__logo {
       min-height: 150px;
