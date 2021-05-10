@@ -50,10 +50,13 @@ body {
 .nav__logo {
   min-height: 150px;
   min-width: 150px;
+  -webkit-transition: linear 6s;
+  transition: linear 6s;
 }
 
 .nav__logo:hover {
-  text-shadow: 0 0 2px 2px #fff;
+  -webkit-transform: rotateZ(720deg);
+          transform: rotateZ(720deg);
 }
 
 .nav__link {
