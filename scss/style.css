@@ -213,8 +213,13 @@ body {
           align-items: center;
   text-decoration: none;
   color: #fff;
-  font-size: 1.42em;
+  font-size: 1.43em;
   -webkit-transition: linear 0.2s;
   transition: linear 0.2s;
+}
+
+.socials__circle:hover {
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
 }
 /*# sourceMappingURL=style.css.map */
