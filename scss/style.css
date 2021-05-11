@@ -1,3 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap");
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans/OpenSans-Regular.eot");
+  src: url("../fonts/OpenSans/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans/bold/OpenSans-Bold.eot");
+  src: url("../fonts/OpenSans/bold/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/bold/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans/bold/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans/bold/OpenSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dosis";
+  src: url("../fonts/Dosis/Medium/ Dosis-Medium.eot");
+  src: url("../fonts/Dosis/Medium/Dosis-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Dosis/Medium/Dosis-Medium.woff") format("woff"), url("../fonts/Dosis/Medium/Dosis-Medium.woff2") format("woff2"), url("../fonts/Dosis/Medium/Dosis-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dosis";
+  src: url("../fonts/Dosis/Semibold/ Dosis-SemiBold.eot");
+  src: url("../fonts/Dosis/Semibold/Dosis-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Dosis/Semibold/Dosis-SemiBold.woff") format("woff"), url("../fonts/Dosis/Semibold/Dosis-SemiBold.woff2") format("woff2"), url("../fonts/Dosis/Semibold/Dosis-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
 .restaurant__h4 {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
