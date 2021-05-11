@@ -1,8 +1,23 @@
 %h2__rest {
-   font-family: "Roboto", sans-serif;
-   font-size: $fzH2Text;
-   color: $hTextColor;
-   font-weight: 900;
+   font-family: "Dosis", sans-serif;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 2.57em;
+   line-height: 1.33;
+   text-align: center;
+   text-transform: uppercase;
+   color: #000000;
+}
+%h4__rest {
+   font-family: "Open Sans", sans-serif;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 0.85em;
+   line-height: 1.17;
+   text-align: center;
+   letter-spacing: 0.5em;
+   text-transform: uppercase;
+   color: #ffffff;
 }
 
 * {
@@ -24,9 +39,8 @@ body {
       margin-top: 150px;
    }
    &__h4 {
+      @extend %h4__rest;
       margin: 0 auto;
-      color: #fff;
-      text-align: center;
    }
    &__h1 {
       color: #fff;
