@@ -47,6 +47,7 @@
 //fonts
 $font-main: "Open Sans", sans-serif;
 $font-title: "Dosis", sans-serif;
+$color_main: #e8c300;
 
 %h2__rest {
    font-family: $font-title;
@@ -73,7 +74,7 @@ $font-title: "Dosis", sans-serif;
    content: "";
    margin: 20px auto;
    display: block;
-   background: #e8c300;
+   background: $color_main;
    border-radius: 50px;
    width: 60px;
    height: 5px;
@@ -173,7 +174,7 @@ body {
       transition: linear 0.2s;
       &:hover {
          text-shadow: 0 2px 15px #fff;
-         color: #ffd600;
+         color: $color_main;
       }
    }
 }
