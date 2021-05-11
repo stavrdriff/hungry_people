@@ -39,9 +39,14 @@ body {
 }
 
 .restaurant__h1 {
-  color: #fff;
-  margin: 0 auto;
+  font-family: "Dosis", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 6.85em;
   text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 auto;
 }
 
 .container {
