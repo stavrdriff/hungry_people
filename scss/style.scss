@@ -182,7 +182,9 @@ body {
       align-items: center;
       text-decoration: none;
       font-size: 1.43;
+      color: #333;
       transition: linear 0.3s;
+
       &:hover {
          text-shadow: 0 2px 15px #fff;
          box-shadow: 0 2px 15px #fff;
