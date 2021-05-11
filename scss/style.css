@@ -70,7 +70,7 @@ body {
   background-image: url(../img/header-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 25px;
+  padding: 25px 80px;
 }
 
 .restaurant__center {
@@ -108,11 +108,13 @@ body {
 }
 
 .restaurant__schedule-rotate {
+  width: 20%;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
 }
 
 .restaurant__scheduleText {
+  margin: 0 auto;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -177,5 +179,37 @@ body {
 .nav__link:hover {
   text-shadow: 0 2px 15px #fff;
   color: #e8c300;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.socials__circle {
+  border: 1px solid #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
