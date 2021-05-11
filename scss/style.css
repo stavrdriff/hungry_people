@@ -213,5 +213,8 @@ body {
           align-items: center;
   text-decoration: none;
   color: #fff;
+  font-size: 1.42em;
+  -webkit-transition: linear 0.2s;
+  transition: linear 0.2s;
 }
 /*# sourceMappingURL=style.css.map */

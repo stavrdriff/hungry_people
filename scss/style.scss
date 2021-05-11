@@ -197,5 +197,10 @@ body {
       align-items: center;
       text-decoration: none;
       color: #fff;
+      font-size: 1.43em;
+      transition: linear 0.2s;
+      &:hover {
+         transform: ;
+      }
    }
 }
