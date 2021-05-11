@@ -1,3 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap");
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans/OpenSans-Regular.eot");
+  src: url("../fonts/OpenSans/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSansBold/OpenSans-Bold.eot");
+  src: url("../fonts/OpenSansBold/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansBold/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSansBold/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSansBold/OpenSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dosis";
+  src: url("../fonts/Dosis/Medium/ Dosis-Medium.eot");
+  src: url("../fonts/Dosis/Medium/Dosis-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Dosis/Medium/Dosis-Medium.woff") format("woff"), url("../fonts/Dosis/Medium/Dosis-Medium.woff2") format("woff2"), url("../fonts/Dosis/Medium/Dosis-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dosis";
+  src: url("../fonts/Dosis/Semibold/ Dosis-SemiBold.eot");
+  src: url("../fonts/Dosis/Semibold/Dosis-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Dosis/Semibold/Dosis-SemiBold.woff") format("woff"), url("../fonts/Dosis/Semibold/Dosis-SemiBold.woff2") format("woff2"), url("../fonts/Dosis/Semibold/Dosis-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+.restaurant__h4 {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.85em;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.restaurant__h1::after {
+  content: "";
+  margin: 20px auto;
+  display: block;
+  background: #e8c300;
+  border-radius: 50px;
+  width: 60px;
+  height: 5px;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -15,7 +70,7 @@ body {
   background-image: url(../img/header-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 25px;
+  padding: 25px 80px;
 }
 
 .restaurant__center {
@@ -24,14 +79,49 @@ body {
 
 .restaurant__h4 {
   margin: 0 auto;
-  color: #fff;
-  text-align: center;
 }
 
 .restaurant__h1 {
-  color: #fff;
-  margin: 0 auto;
+  font-family: "Dosis", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 0.85;
+  font-size: 6.85em;
   text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 30px auto;
+}
+
+.restaurant__h1::after {
+  margin: 30px auto;
+}
+
+.restaurant__center {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.restaurant__schedule-rotate {
+  width: 20%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.restaurant__scheduleText {
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.85em;
+  line-height: 0.85em;
+  text-align: center;
+  color: #ffffff;
 }
 
 .container {
@@ -79,7 +169,7 @@ body {
 .nav__link {
   text-decoration: none;
   color: #fff;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 0.85em;
   text-transform: uppercase;
   -webkit-transition: linear 0.2s;
@@ -88,6 +178,40 @@ body {
 
 .nav__link:hover {
   text-shadow: 0 2px 15px #fff;
-  color: #ffd600;
+  color: #e8c300;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.socials__circle {
+  border: 1px solid #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

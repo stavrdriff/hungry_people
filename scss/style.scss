@@ -1,6 +1,88 @@
+@font-face {
+   font-family: "Open Sans";
+   src: url("../fonts/OpenSans/OpenSans-Regular.eot");
+   src: url("../fonts/OpenSans/OpenSans-Regular.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/OpenSans/OpenSans-Regular.woff") format("woff"),
+      url("../fonts/OpenSans/OpenSans-Regular.woff2") format("woff2"),
+      url("../fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
+   font-weight: 400;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "Open Sans";
+   src: url("../fonts/OpenSansBold/OpenSans-Bold.eot");
+   src: url("../fonts/OpenSansBold/OpenSans-Bold.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/OpenSansBold/OpenSans-Bold.woff") format("woff"),
+      url("../fonts/OpenSansBold/OpenSans-Bold.woff2") format("woff2"),
+      url("../fonts/OpenSansBold/OpenSans-Bold.ttf") format("truetype");
+   font-weight: 700;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "Dosis";
+   src: url("../fonts/Dosis/Medium/ Dosis-Medium.eot");
+   src: url("../fonts/Dosis/Medium/Dosis-Medium.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/Dosis/Medium/Dosis-Medium.woff") format("woff"),
+      url("../fonts/Dosis/Medium/Dosis-Medium.woff2") format("woff2"),
+      url("../fonts/Dosis/Medium/Dosis-Medium.ttf") format("truetype");
+   font-weight: 500;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "Dosis";
+   src: url("../fonts/Dosis/Semibold/ Dosis-SemiBold.eot");
+   src: url("../fonts/Dosis/Semibold/Dosis-SemiBold.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/Dosis/Semibold/Dosis-SemiBold.woff") format("woff"),
+      url("../fonts/Dosis/Semibold/Dosis-SemiBold.woff2") format("woff2"),
+      url("../fonts/Dosis/Semibold/Dosis-SemiBold.ttf") format("truetype");
+   font-weight: 600;
+   font-style: normal;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap");
+
+//fonts
+$font-main: "Open Sans", sans-serif;
+$font-title: "Dosis", sans-serif;
+$color_main: #e8c300;
+
+%h2__rest {
+   font-family: $font-title;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 2.57em;
+   line-height: 1.33;
+   text-align: center;
+   text-transform: uppercase;
+   color: #000000;
+}
+%h4__rest {
+   font-family: $font-main;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 0.85em;
+   line-height: 1.17;
+   text-align: center;
+   letter-spacing: 0.5em;
+   text-transform: uppercase;
+   color: #ffffff;
+}
+%after__h {
+   content: "";
+   margin: 20px auto;
+   display: block;
+   background: $color_main;
+   border-radius: 50px;
+   width: 60px;
+   height: 5px;
+}
 * {
    box-sizing: border-box;
 }
+
 body {
    font-size: 14px;
 }
@@ -12,19 +94,47 @@ body {
    background-image: url(../img/header-bg.jpg);
    background-repeat: no-repeat;
    background-size: cover;
-   padding-top: 25px;
+   padding: 25px 80px;
    &__center {
       margin-top: 150px;
    }
    &__h4 {
+      @extend %h4__rest;
       margin: 0 auto;
-      color: #fff;
-      text-align: center;
    }
    &__h1 {
-      color: #fff;
-      margin: 0 auto;
+      font-family: $font-title;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 0.85;
+      font-size: 6.85em;
       text-align: center;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin: 30px auto;
+      &::after {
+         @extend %after__h;
+         margin: 30px auto;
+      }
+   }
+   &__center {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+   }
+   &__schedule-rotate {
+      width: 20%;
+      transform: rotate(-90deg);
+   }
+   &__scheduleText {
+      margin: 0 auto;
+      font-family: $font-main;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 0.85em;
+      line-height: 0.85em;
+      text-align: center;
+      color: #ffffff;
    }
 }
 .container {
@@ -60,13 +170,32 @@ body {
    &__link {
       text-decoration: none;
       color: #fff;
-      font-family: "Open Sans";
+      font-family: $font-main;
       font-size: 0.85em;
       text-transform: uppercase;
       transition: linear 0.2s;
       &:hover {
          text-shadow: 0 2px 15px #fff;
-         color: #ffd600;
+         color: $color_main;
       }
+   }
+}
+.socials {
+   display: flex;
+   flex-direction: column;
+   width: 20%;
+   align-items: flex-end;
+   &__circle {
+      border: 1px solid #fff;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: #fff;
    }
 }
