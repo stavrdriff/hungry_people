@@ -74,10 +74,6 @@ body {
   padding: 25px 80px;
 }
 
-.restaurant__center {
-  margin-top: 150px;
-}
-
 .restaurant__h4 {
   margin: 0 auto;
 }
@@ -106,6 +102,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 175px;
 }
 
 .restaurant__schedule-rotate {
@@ -133,6 +130,7 @@ body {
 }
 
 .restaurant__btns {
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,8 +170,36 @@ body {
   background: transparent;
 }
 
+.restaurant__linkMore {
+  width: 40px;
+  height: 40px;
+  margin: 150px auto 0;
+  background: #fff;
+  border-radius: 50%;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-size: 1.43;
+  -webkit-transition: linear 0.3s;
+  transition: linear 0.3s;
+}
+
+.restaurant__linkMore:hover {
+  text-shadow: 0 2px 15px #fff;
+  -webkit-box-shadow: 0 2px 15px #fff;
+          box-shadow: 0 2px 15px #fff;
+}
+
 .container {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 

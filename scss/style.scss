@@ -95,9 +95,6 @@ body {
    background-size: cover;
    background-position: center;
    padding: 25px 80px;
-   &__center {
-      margin-top: 150px;
-   }
    &__h4 {
       @extend %h4__rest;
       margin: 0 auto;
@@ -121,9 +118,11 @@ body {
       width: 100%;
       display: flex;
       justify-content: space-between;
+      margin-top: 175px;
    }
    &__schedule-rotate {
       width: 20%;
+
       transform: rotate(-90deg);
    }
    &__scheduleText {
@@ -142,6 +141,7 @@ body {
       }
    }
    &__btns {
+      margin-top: 20px;
       display: flex;
       justify-content: center;
    }
@@ -170,9 +170,27 @@ body {
          background: transparent;
       }
    }
+   &__linkMore {
+      width: 40px;
+      height: 40px;
+      margin: 150px auto 0;
+      background: #fff;
+      border-radius: 50%;
+      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      font-size: 1.43;
+      transition: linear 0.3s;
+      &:hover {
+         text-shadow: 0 2px 15px #fff;
+         box-shadow: 0 2px 15px #fff;
+      }
+   }
 }
 .container {
-   width: 90%;
+   width: 100%;
    margin: 0 auto;
 }
 .header {
