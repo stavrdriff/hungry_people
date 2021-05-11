@@ -102,7 +102,7 @@ body {
       margin: 0 auto;
    }
    &__h1 {
-      font-family: "Dosis", sans-serif;
+      font-family: $font-title;
       font-style: normal;
       font-weight: bold;
       line-height: 0.85;
@@ -113,8 +113,25 @@ body {
       margin: 30px auto;
       &::after {
          @extend %after__h;
-         margin-top: 30px;
+         margin: 30px auto;
       }
+   }
+   &__center {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+   }
+   &__schedule-rotate {
+      transform: rotate(-90deg);
+   }
+   &__scheduleText {
+      font-family: $font-main;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 0.85em;
+      line-height: 0.85em;
+      text-align: center;
+      color: #ffffff;
    }
 }
 .container {
@@ -150,7 +167,7 @@ body {
    &__link {
       text-decoration: none;
       color: #fff;
-      font-family: "Open Sans";
+      font-family: $font-main;
       font-size: 0.85em;
       text-transform: uppercase;
       transition: linear 0.2s;

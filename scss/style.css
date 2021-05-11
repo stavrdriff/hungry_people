@@ -94,7 +94,32 @@ body {
 }
 
 .restaurant__h1::after {
-  margin-top: 30px;
+  margin: 30px auto;
+}
+
+.restaurant__center {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.restaurant__schedule-rotate {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.restaurant__scheduleText {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.85em;
+  line-height: 0.85em;
+  text-align: center;
+  color: #ffffff;
 }
 
 .container {
@@ -142,7 +167,7 @@ body {
 .nav__link {
   text-decoration: none;
   color: #fff;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 0.85em;
   text-transform: uppercase;
   -webkit-transition: linear 0.2s;
