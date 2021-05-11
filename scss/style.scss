@@ -49,9 +49,9 @@ $font-main: "Open Sans", sans-serif;
 $font-title: "Dosis", sans-serif;
 
 %h2__rest {
-   font-family: "Dosis", sans-serif;
+   font-family: $font-title;
    font-style: normal;
-   font-weight: bold;
+   font-weight: 700;
    font-size: 2.57em;
    line-height: 1.33;
    text-align: center;
@@ -59,9 +59,9 @@ $font-title: "Dosis", sans-serif;
    color: #000000;
 }
 %h4__rest {
-   font-family: "Open Sans", sans-serif;
+   font-family: $font-main;
    font-style: normal;
-   font-weight: bold;
+   font-weight: 700;
    font-size: 0.85em;
    line-height: 1.17;
    text-align: center;
