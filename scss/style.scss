@@ -329,6 +329,7 @@ body {
 }
 .nav__list.open {
 	display: grid;
+	grid-template-columns: 1fr;
 }
 .burger.close {
 	display: none;

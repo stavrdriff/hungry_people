@@ -392,6 +392,8 @@ body {
 .nav__list.open {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
 }
 
 .burger.close {
