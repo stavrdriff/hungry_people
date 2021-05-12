@@ -72,6 +72,12 @@ body {
   font-size: 14px;
 }
 
+@media (max-width: 1024px) {
+  body {
+    font-size: 12px;
+  }
+}
+
 .restaurant {
   margin: 0 auto;
   max-width: 1440px;
@@ -104,6 +110,12 @@ body {
   margin: 30px auto;
 }
 
+@media (max-width: 1023px) {
+  .restaurant__h1 {
+    font-size: 4em;
+  }
+}
+
 .restaurant__center {
   width: 100%;
   display: -webkit-box;
@@ -118,6 +130,12 @@ body {
 @media (max-width: 980px) {
   .restaurant__center {
     margin-top: 5vh;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+  .restaurant__center {
+    margin-top: 10vh;
   }
 }
 
@@ -257,6 +275,12 @@ body {
   }
 }
 
+@media (max-width: 1024px) and (orientation: landscape) {
+  .restaurant__linkMore {
+    margin-top: 5vh;
+  }
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -360,8 +384,15 @@ body {
 
 @media (max-width: 980px) {
   .socials__circle:hover {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@media (max-width: 980px) {
+  .socials__circle {
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -385,6 +416,12 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     margin: 10vh auto 1vh;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+  .socials_media {
+    margin-top: 5vh;
   }
 }
 
