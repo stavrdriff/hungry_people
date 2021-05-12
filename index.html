@@ -5,7 +5,22 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>HUNGRY PEOPLE</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<meta property="og:image:width" content="1027">
+	<meta property="og:image:height" content="538">
+	<meta property="og:title"
+		content="HUNGRY PEOPLE - лучший ресторан для ценителей изысканных блюд и приятного отдыха!">
+	<meta property="og:url" content="https://stavrdriff.github.io/hungry_people/">
+	<meta property="og:image" content="https://stavrdriff.github.io/hungry_people/img/og-image.jpg">
+	<meta property="og:description"
+		content="Это самый офигенный ресторан из мне известных, но я так задолбался с ротейтом, что при адаптиве решил выкинуть его к чертям собачьим, ведь кто будет смотреть на такую хрень в телефоне...">
+	<title>HUNGRY PEOPLE - лучший ресторан для ценителей изысканных блюд и приятного отдыха!</title>
 	<link rel="stylesheet" href="fonts/icomoon/style.css">
 	<link rel="stylesheet" href="scss/normalize.css">
 
@@ -34,33 +49,77 @@
 					</ul>
 				</nav>
 			</header>
-		</div>
-		<div class="restaurant__center">
-			<div class="restaurant__schedule restaurant__schedule-rotate">
-				<p class="restaurant__scheduleText">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
+
+
+			<div class="restaurant__center">
+				<div class="restaurant__schedule">
+					<p class="restaurant__scheduleText">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
+				</div>
+				<div class="restaurant__centerMain">
+					<h4 class="restaurant__h4">restaurant</h4>
+					<h1 class="restaurant__h1">HUNGRY PEOPLE</h1>
+					<div class="restaurant__btns">
+						<button class="restaurant__btn restaurant__btn_yellow">BOOK TABLE</button>
+						<button class="restaurant__btn restaurant__btn_transparent">EXPLORE</button>
+					</div>
+				</div>
+				<div class="socials">
+					<a href="https://www.facebook.com/" title="Find us in Facebook" class="socials__circle">
+						<span class="icon-facebook"></span>
+					</a>
+					<a href="https://twitter.com/" title="Find us in Twitter" class="socials__circle">
+						<span class="icon-twitter"></span>
+					</a>
+					<a href="https://www.instagram.com/" title="Find us in Instagram" class="socials__circle">
+						<span class="icon-instagram"></span>
+					</a>
+				</div>
 			</div>
-			<div class="restaurant__centerMain">
-				<h4 class="restaurant__h4">restaurant</h4>
-				<h1 class="restaurant__h1">HUNGRY PEOPLE</h1>
-			</div>
-			<div class="socials">
-				<a href="" class="socials__circle">
+			<a href="#about" class="restaurant__linkMore">
+				<span class="icon-chevron-down"></span>
+			</a>
+			<div class="socials_media">
+				<a href="https://www.facebook.com/" title="Find us in Facebook" class="socials__circle">
 					<span class="icon-facebook"></span>
 				</a>
-				<a href="" class="socials__circle">
+				<a href="https://twitter.com/" title="Find us in Twitter" class="socials__circle">
 					<span class="icon-twitter"></span>
 				</a>
-				<a href="" class="socials__circle">
+				<a href="https://www.instagram.com/" title="Find us in Instagram" class="socials__circle">
 					<span class="icon-instagram"></span>
 				</a>
 			</div>
-		</div>
-		<div class="restaurant__linkMore">
-
+			<div class="restaurant__schedule_media">
+				<p class="restaurant__scheduleText_media">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
+			</div>
 		</div>
 	</section>
 
 
+	<section id="about" class="about">
+		<div class="about__content">
+			<div class="about__text">
+				<h2 class="about__h2">about us</h2>
+				<div class="about__p">
+					<p class="about__p_first">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit
+						maximus,
+						molestie est a, tempor magna.</p>
+					<p class="about__p_second">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere.
+						Morbi
+						non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a
+						sollicitudin
+						lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper
+						laoreet.
+					</p>
+				</div>
+			</div>
+			<div class="about__image">
+				<img class="about__image_item image" src="./img/about-img.jpg" alt="image_restaurant"
+					srcset="./img/about-img-md.jpg 980w, ./img/about-img-sm.jpg 768w">
+				<div class="about__image_item square"></div>
+			</div>
+		</div>
+	</section>
 
 
 
