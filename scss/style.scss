@@ -159,14 +159,10 @@ body {
       text-align: center;
       color: #ffffff;
       transition: linear 0.5s;
-      cursor: pointer;
       transform: rotate(-90deg);
       position: absolute;
       top: 50%;
       left: -45%;
-      &:hover {
-         font-size: 1.5em;
-      }
    }
    &__scheduleText_media {
       margin: 0 auto;
