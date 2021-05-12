@@ -354,7 +354,7 @@ body {
 		justify-content: center;
 		width: 40%;
 		max-width: 570px;
-		// margin-right: 80px;
+		margin: 0 auto;
 		@media (max-width: 980px) {
 			margin: 0 auto;
 			width: 100%;
@@ -440,11 +440,6 @@ body {
 	max-height: 475px;
 	position: relative;
 	margin: 0 auto;
-	// display: flex;
-	// flex-direction: row;
-	// flex-wrap: nowrap;
-	// flex-grow: 1;
-	// margin-right: -100px;
 	@media (max-width: 980px) {
 		width: 75%;
 		margin-left: 25%;
@@ -454,7 +449,6 @@ body {
 		height: 100%;
 		border-radius: 5px;
 		filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
-		// flex-grow: 1;
 		object-fit: cover;
 		object-position: center;
 	}
