@@ -102,7 +102,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 175px;
+  margin-top: 15vh;
 }
 
 .restaurant__schedule-rotate {
@@ -177,7 +177,7 @@ body {
 .restaurant__linkMore {
   width: 40px;
   height: 40px;
-  margin: 150px auto 0;
+  margin: 15vh auto 0;
   background: #fff;
   border-radius: 50%;
   display: block;
