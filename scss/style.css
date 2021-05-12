@@ -87,7 +87,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 25px 4%;
+  padding: 25px 5%;
 }
 
 .restaurant__h4 {
@@ -424,7 +424,7 @@ body {
   margin: 0 auto;
   max-width: 1440px;
   width: 100%;
-  padding: 100px 80px;
+  padding: 100px 5%;
 }
 
 .about__content {
@@ -516,6 +516,7 @@ body {
 @media (max-width: 980px) {
   .containerImageRight {
     width: 100%;
+    margin-right: 25%;
   }
 }
 
@@ -573,6 +574,7 @@ body {
 @media (max-width: 980px) {
   .containerImageLeft {
     width: 100%;
+    margin-left: 25%;
   }
 }
 
@@ -626,7 +628,7 @@ body {
   background-size: cover;
   background-position: center;
   margin: 0 auto;
-  padding: 35px 80px 120px;
+  padding: 35px 5% 120px;
 }
 
 .our__wrap {
@@ -675,7 +677,14 @@ body {
 }
 
 .textRigth__title {
+  margin: 0;
   color: #ffffff;
+}
+
+@media (max-width: 980px) {
+  .textRigth__title {
+    margin-top: 50px;
+  }
 }
 
 .textRigth__text {
