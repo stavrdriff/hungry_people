@@ -31,7 +31,7 @@
   font-style: normal;
 }
 
-.about__h2 {
+.about__h2, .textRigth__title {
   font-family: "Dosis", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -53,7 +53,7 @@
   color: #ffffff;
 }
 
-.restaurant__h1::after, .about__h2::after {
+.restaurant__h1::after, .about__h2::after, .textRigth__title::after {
   content: "";
   margin: 20px auto;
   display: block;
@@ -64,8 +64,7 @@
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -118,12 +117,8 @@ body {
 
 .restaurant__center {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-top: 15vh;
 }
 
@@ -174,10 +169,8 @@ body {
   line-height: 0.85em;
   text-align: center;
   color: #ffffff;
-  -webkit-transition: linear 0.5s;
   transition: linear 0.5s;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
   position: absolute;
   top: 50%;
   left: -45%;
@@ -196,12 +189,8 @@ body {
 
 .restaurant__btns {
   margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .restaurant__btn {
@@ -215,14 +204,12 @@ body {
   font-size: 0.85em;
   font-weight: 700;
   cursor: pointer;
-  -webkit-transition: linear 0.3s;
   transition: linear 0.3s;
 }
 
 .restaurant__btn:hover {
   text-shadow: 0 2px 15px #fff;
-  -webkit-box-shadow: 0 2px 15px #fff;
-          box-shadow: 0 2px 15px #fff;
+  box-shadow: 0 2px 15px #fff;
 }
 
 .restaurant__btn_yellow {
@@ -242,26 +229,18 @@ body {
   background: #fff;
   border-radius: 50%;
   display: block;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   font-size: 1.43;
   color: #333;
-  -webkit-transition: linear 0.3s;
   transition: linear 0.3s;
 }
 
 .restaurant__linkMore:hover {
   text-shadow: 0 2px 15px #fff;
-  -webkit-box-shadow: 0 2px 15px #fff;
-          box-shadow: 0 2px 15px #fff;
+  box-shadow: 0 2px 15px #fff;
 }
 
 @media (max-width: 980px) {
@@ -294,11 +273,8 @@ body {
   margin: 0 auto;
   padding: 0;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .nav__item {
@@ -309,13 +285,11 @@ body {
 .nav__logo {
   min-height: 150px;
   min-width: 150px;
-  -webkit-transition: linear 6s;
   transition: linear 6s;
 }
 
 .nav__logo:hover {
-  -webkit-transform: rotateZ(720deg);
-          transform: rotateZ(720deg);
+  transform: rotateZ(720deg);
 }
 
 .nav__link {
@@ -324,7 +298,6 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 0.85em;
   text-transform: uppercase;
-  -webkit-transition: linear 0.2s;
   transition: linear 0.2s;
 }
 
@@ -334,17 +307,10 @@ body {
 }
 
 .socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 20%;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-items: flex-end;
 }
 
 .socials__circle {
@@ -353,34 +319,24 @@ body {
   height: 60px;
   border-radius: 50%;
   margin: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: #fff;
   font-size: 1.43em;
-  -webkit-transition: linear 0.2s;
   transition: linear 0.2s;
 }
 
 .socials__circle:hover {
-  -webkit-transform: translateX(-10px);
-          transform: translateX(-10px);
+  transform: translateX(-10px);
   text-shadow: 0 0 15px #fff;
-  -webkit-box-shadow: 0 0 15px #fff;
-          box-shadow: 0 0 15px #fff;
+  box-shadow: 0 0 15px #fff;
 }
 
 @media (max-width: 980px) {
   .socials__circle:hover {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
@@ -404,12 +360,8 @@ body {
 @media (max-width: 980px) {
   .socials_media {
     display: block;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     margin: 10vh auto 1vh;
   }
 }
@@ -428,41 +380,23 @@ body {
 }
 
 .about__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 100%;
 }
 
 @media (max-width: 980px) {
   .about__content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
 .about__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 50%;
   max-width: 600px;
   margin-right: 80px;
@@ -506,11 +440,8 @@ body {
   width: 50%;
   height: 100%;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
   margin-left: -50px;
 }
 
@@ -524,9 +455,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 5px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
 }
 
 .square {
@@ -534,14 +463,90 @@ body {
   height: 40%;
   border: 20px solid #e8c300;
   background: transparent;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
-          filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
+  box-sizing: border-box;
+  filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
   border-radius: 5px;
   z-index: 2;
   position: absolute;
   right: -11%;
   top: 29%;
 }
-/*# sourceMappingURL=style.css.map */
+
+.container2 {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.our__body {
+  background: url(../img/our-bg.jpg);
+  width: 100%;
+}
+
+.our__wrap {
+  display: flex;
+}
+
+.our__title {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.85em;
+  line-height: 1em;
+  text-align: center;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 auto;
+  padding: 40px 0 0 0;
+}
+
+.imgLeft {
+  position: relative;
+}
+
+.imgLeft__img {
+  margin: 45px 0px 100px 197px;
+}
+
+.imgLeft__block {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.textRigth {
+  display: flex;
+  flex-direction: column;
+  width: 53%;
+  justify-content: center;
+}
+
+.textRigth__title {
+  color: #ffffff;
+}
+
+.textRigth__text {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.3em;
+  line-height: 2em;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.textRigth__text2 {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.7em;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  text-align: center;
+  margin: 20px auto 0;
+}
