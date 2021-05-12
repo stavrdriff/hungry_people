@@ -92,6 +92,7 @@ body {
   background-size: cover;
   background-position: center;
   padding: 25px 5%;
+  position: relative;
 }
 
 .restaurant__container {
@@ -245,7 +246,6 @@ body {
 .restaurant__linkMore {
   width: 40px;
   height: 40px;
-  margin: 15vh auto 0;
   background: #fff;
   border-radius: 50%;
   display: block;
@@ -259,28 +259,19 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
-  font-size: 1.43;
+  font-size: 1.43em;
   color: #333;
   -webkit-transition: linear 0.3s;
   transition: linear 0.3s;
+  position: absolute;
+  left: calc(50%-20px);
+  bottom: 0;
 }
 
 .restaurant__linkMore:hover {
   text-shadow: 0 2px 15px #fff;
   -webkit-box-shadow: 0 2px 15px #fff;
           box-shadow: 0 2px 15px #fff;
-}
-
-@media (max-width: 980px) {
-  .restaurant__linkMore {
-    margin-top: 8vh;
-  }
-}
-
-@media (max-width: 1024px) and (orientation: landscape) {
-  .restaurant__linkMore {
-    margin-top: 5vh;
-  }
 }
 
 .header {
