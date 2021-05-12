@@ -94,7 +94,7 @@ body {
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
-   padding: 25px 80px;
+   padding: 25px 4%;
    &__h4 {
       @extend %h4__rest;
       margin: 0 auto;
@@ -119,10 +119,26 @@ body {
       display: flex;
       justify-content: space-between;
       margin-top: 15vh;
+      @media (max-width: 980px) {
+         margin-top: 5vh;
+      }
    }
-   &__schedule-rotate {
+   &__centerMain {
+      margin: 0 auto;
+   }
+   &__schedule {
       width: 20%;
       position: relative;
+      @media (max-width: 980px) {
+         display: none;
+      }
+   }
+   &__schedule_media {
+      display: none;
+      margin-top: 0;
+      @media (max-width: 980px) {
+         display: block;
+      }
    }
    &__scheduleText {
       margin: 0;
@@ -142,6 +158,16 @@ body {
       &:hover {
          font-size: 1.5em;
       }
+   }
+   &__scheduleText_media {
+      margin: 0 auto;
+      font-family: $font-main;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1em;
+      line-height: 1em;
+      text-align: center;
+      color: #ffffff;
    }
    &__btns {
       margin-top: 20px;
@@ -191,6 +217,9 @@ body {
       &:hover {
          text-shadow: 0 2px 15px #fff;
          box-shadow: 0 2px 15px #fff;
+      }
+      @media (max-width: 980px) {
+         margin-top: 8vh;
       }
    }
 }
@@ -247,8 +276,7 @@ body {
       width: 60px;
       height: 60px;
       border-radius: 50%;
-      margin-top: 10px;
-      margin-bottom: 10px;
+      margin: 10px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -260,6 +288,21 @@ body {
          transform: translateX(-10px);
          text-shadow: 0 0 15px #fff;
          box-shadow: 0 0 15px #fff;
+         @media (max-width: 980px) {
+            transform: translateY(-10px);
+         }
+      }
+   }
+   @media (max-width: 980px) {
+      display: none;
+   }
+   &_media {
+      display: none;
+      @media (max-width: 980px) {
+         display: block;
+         display: flex;
+         justify-content: center;
+         margin: 10vh auto 1vh;
       }
    }
 }
