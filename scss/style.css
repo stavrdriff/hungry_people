@@ -107,12 +107,11 @@ body {
 
 .restaurant__schedule-rotate {
   width: 20%;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  position: relative;
 }
 
 .restaurant__scheduleText {
-  margin: 0 auto;
+  margin: 0;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -123,6 +122,11 @@ body {
   -webkit-transition: linear 0.5s;
   transition: linear 0.5s;
   cursor: pointer;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  position: absolute;
+  top: 50%;
+  left: -45%;
 }
 
 .restaurant__scheduleText:hover {

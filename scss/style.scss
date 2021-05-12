@@ -122,11 +122,10 @@ body {
    }
    &__schedule-rotate {
       width: 20%;
-
-      transform: rotate(-90deg);
+      position: relative;
    }
    &__scheduleText {
-      margin: 0 auto;
+      margin: 0;
       font-family: $font-main;
       font-style: normal;
       font-weight: 700;
@@ -136,6 +135,10 @@ body {
       color: #ffffff;
       transition: linear 0.5s;
       cursor: pointer;
+      transform: rotate(-90deg);
+      position: absolute;
+      top: 50%;
+      left: -45%;
       &:hover {
          font-size: 1.5em;
       }
