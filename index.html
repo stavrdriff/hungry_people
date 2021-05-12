@@ -6,34 +6,76 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>HUNGRY PEOPLE</title>
+   <link rel="stylesheet" href="fonts/icomoon/style.css">
    <link rel="stylesheet" href="scss/normalize.css">
+
    <link rel="stylesheet" href="scss/style.css">
 
 </head>
 
 <body>
-   <header class="header">
-      <nav class="nav">
-         <ul class="nav__list">
-            <li class="nav__item"><a href="#home" class="nav__link">home</a></li>
-            <li class="nav__item"><a href="#about" class="nav__link">about</a></li>
-            <li class="nav__item"><a href="#team" class="nav__link">team</a></li>
-            <li class="nav__item"><a href="#booking" class="nav__link">booking</a></li>
-            <li class="nav__logo"><a href="index.html">
-                  <svg class="steering_wheel" viewBox="0 0 150 150">
-                     <use xlink:href="sprite.svg#steering_wheel"></use>
-                  </svg></a></li>
-            <li class="nav__item"><a href="#menu" class="nav__link">menu</a></li>
-            <li class="nav__item"><a href="#gallery" class="nav__link">gallery</a></li>
-            <li class="nav__item"><a href="#events" class="nav__link">events</a></li>
-            <li class="nav__item"><a href="#booking" class="nav__link">booking</a></li>
-         </ul>
-      </nav>
-   </header>
-   <h1>HUNGRY PEOPLE</h1>
+   <section class="restaurant">
+      <div class="container">
+         <header class="header">
+            <nav class="nav">
+               <ul class="nav__list">
+                  <li class="nav__item"><a href="#home" class="nav__link" title="home">home</a></li>
+                  <li class="nav__item"><a href="#about" class="nav__link" title="about">about</a></li>
+                  <li class="nav__item"><a href="#team" class="nav__link" title="team">team</a></li>
+                  <li class="nav__item"><a href="#booking" class="nav__link" title="booking">booking</a></li>
+                  <li class="nav__logo"><a href="index.html" title="Main">
+                        <svg class="steering_wheel" viewBox="0 0 150 150">
+                           <use xlink:href="sprite.svg#steering_wheel"></use>
+                        </svg></a></li>
+                  <li class="nav__item"><a href="#menu" class="nav__link" title="menu">menu</a></li>
+                  <li class="nav__item"><a href="#gallery" class="nav__link" title="gallery">gallery</a></li>
+                  <li class="nav__item"><a href="#events" class="nav__link" title="events">events</a></li>
+                  <li class="nav__item"><a href="#contact" class="nav__link" title="">contact</a></li>
+               </ul>
+            </nav>
+         </header>
+      </div>
+      <div class="restaurant__center">
+         <div class="restaurant__schedule restaurant__schedule-rotate">
+            <p class="restaurant__scheduleText">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
+         </div>
+         <div class="restaurant__centerMain">
+            <h4 class="restaurant__h4">restaurant</h4>
+            <h1 class="restaurant__h1">HUNGRY PEOPLE</h1>
+         </div>
+         <div class="socials">
+            <a href="https://www.facebook.com/" title="Find us in Facebook" class="socials__circle">
+               <span class="icon-facebook"></span>
+            </a>
+            <a href="https://twitter.com/" title="Find us in Twitter" class="socials__circle">
+               <span class="icon-twitter"></span>
+            </a>
+            <a href="https://www.instagram.com/" title="Find us in Instagram" class="socials__circle">
+               <span class="icon-instagram"></span>
+            </a>
+         </div>
+      </div
+      <div class="restaurant__linkMore">
+
+      </div>
+   </section>
 
 
-
+<section class="about">
+   <div class="about__content">
+   <div class="about__text">
+      <h2 class="about__h2">about us</h2>
+      <div class="about__p">
+<p class="about__p_first">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+<p class="about__p_second">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+      </div>
+   </div>
+   <div class="about__image">
+      <img class="about__image_item image" src="./img/about-img.jpg" alt="image_restaurant" srcset="./img/about-img-md.jpg 980w, ./img/about-img-sm.jpg 768w">
+      <div class="about__image_item square"></div>
+   </div>
+</div>
+</section>
 
 
 

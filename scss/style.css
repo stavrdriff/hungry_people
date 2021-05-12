@@ -1,37 +1,382 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap");
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   src: url("../fonts/OpenSans/OpenSans-Regular.eot");
-  src: url("../fonts/OpenSans/OpenSans-Regular.eot?#iefix") iformat("embedded-opentype"), url("../fonts/OpenSans/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
+  src: url("../fonts/OpenSans/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Open Sans';
-  src: url("../fonts/OpenSans bold/OpenSans-Bold.eot");
-  src: url("../fonts/OpenSans bold/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans bold/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans bold/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans bold/OpenSans-Bold.ttf") format("truetype");
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSansBold/OpenSans-Bold.eot");
+  src: url("../fonts/OpenSansBold/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansBold/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSansBold/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSansBold/OpenSans-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Dosis';
-  src: url("../fonts/Dosis Medium/ Dosis-Medium.eot");
-  src: url("../fonts/Dosis Medium/Dosis-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Dosis Medium/Dosis-Medium.woff") format("woff"), url("../fonts/Dosis Medium/Dosis-Medium.woff2") format("woff2"), url("../fonts/Dosis Medium/Dosis-Medium.ttf") format("truetype");
+  font-family: "Dosis";
+  src: url("../fonts/DosisMedium/Dosis-Medium.eot");
+  src: url("../fonts/DosisMedium/Dosis-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/DosisMedium/Dosis-Medium.woff") format("woff"), url("../fonts/DosisMedium/Dosis-Medium.woff2") format("woff2"), url("../fonts/DosisMedium/Dosis-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Dosis';
-  src: url("../fonts/Dosis Semibold/ Dosis-SemiBold.eot");
-  src: url("../fonts/Dosis Semibold/Dosis-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Dosis Semibold/Dosis-SemiBold.woff") format("woff"), url("../fonts/Dosis Semibold/Dosis-SemiBold.woff2") format("woff2"), url("../fonts/Dosis Semibold/Dosis-SemiBold.ttf") format("truetype");
+  font-family: "Dosis";
+  src: url("../fonts/DosisSemibold/Dosis-SemiBold.eot");
+  src: url("../fonts/DosisSemibold/Dosis-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/DosisSemibold/Dosis-SemiBold.woff") format("woff"), url("../fonts/DosisSemibold/Dosis-SemiBold.woff2") format("woff2"), url("../fonts/DosisSemibold/Dosis-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 
+.about__h2 {
+  font-family: "Dosis", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.57em;
+  line-height: 1.33;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.restaurant__h4 {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.85em;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.restaurant__h1::after, .about__h2::after {
+  content: "";
+  margin: 20px auto;
+  display: block;
+  background: #e8c300;
+  border-radius: 50px;
+  width: 60px;
+  height: 5px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-size: 14px;
+}
+
+.restaurant {
+  margin: 0 auto;
+  max-width: 1440px;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../img/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 25px 80px;
+}
+
+.restaurant__center {
+  margin-top: 150px;
+}
+
+.restaurant__h4 {
+  margin: 0 auto;
+}
+
+.restaurant__h1 {
+  font-family: "Dosis", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 0.85;
+  font-size: 6.85em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 30px auto;
+}
+
+.restaurant__h1::after {
+  margin: 30px auto;
+}
+
+.restaurant__center {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.restaurant__schedule-rotate {
+  width: 20%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.restaurant__scheduleText {
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.85em;
+  line-height: 0.85em;
+  text-align: center;
+  color: #ffffff;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header {
+  background: transparent;
+  margin: 0 auto;
+}
+
+.nav {
+  margin: 0 auto;
+}
+
+.nav__list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.nav__item {
+  margin-top: 20px;
+  min-width: 55px;
+}
+
+.nav__logo {
+  min-height: 150px;
+  min-width: 150px;
+  -webkit-transition: linear 6s;
+  transition: linear 6s;
+}
+
+.nav__logo:hover {
+  -webkit-transform: rotateZ(720deg);
+          transform: rotateZ(720deg);
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.85em;
+  text-transform: uppercase;
+  -webkit-transition: linear 0.2s;
+  transition: linear 0.2s;
+}
+
+.nav__link:hover {
+  text-shadow: 0 2px 15px #fff;
+  color: #e8c300;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.socials__circle {
+  border: 1px solid #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.43em;
+  -webkit-transition: linear 0.2s;
+  transition: linear 0.2s;
+}
+
+.socials__circle:hover {
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+}
+
+.about {
+  margin: 0 auto;
+  max-width: 1440px;
+  height: 100vh;
+  width: 100%;
+  padding: 100px 80px;
+}
+
+.about__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .about__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.about__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 600px;
+  margin-right: 80px;
+}
+
+.about__h2 {
+  margin: 0 auto;
+}
+
+.about__h2::after {
+  margin: 10px auto;
+}
+
+.about__p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+  color: #000000;
+  font-weight: 400;
+}
+
+.about__p_first {
+  font-weight: 700;
+}
+
+.about__p_second {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.about__image {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-left: -50px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.square {
+  width: 100%;
+  width: 250px;
+  height: 250px;
+  border: 20px solid #E8C300;
+  background: transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
+  border-radius: 5px;
+  z-index: 2;
+  position: absolute;
+  right: -4em;
+  top: 25%;
+}
+
+@media (max-width: 1240px) {
+  .square {
+    width: 215px;
+    height: 215px;
+  }
+}
+
+@media (max-width: 980px) {
+  .square {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 768px) {
+  .square {
+    width: 130px;
+    height: 130px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
