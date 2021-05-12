@@ -670,3 +670,64 @@ body {
 	display: flex;
 	color: rgba(51, 51, 51, 0.5);
 }
+
+//delicious
+
+.delicious {
+	max-height: 920px;
+	&__body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__menu {
+	}
+	&__price {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 100px;
+		padding: 0 0 100px 0;
+	}
+}
+
+.menu {
+	&__button {
+		@extend %h4__rest;
+		color: #000000;
+		border: none;
+		background: none;
+		cursor: pointer;
+		width: 120px;
+		padding: 50px 0 50px 0;
+		&:not(:last-child)::after {
+			content: "";
+			border: 1px solid rgba(51, 51, 51, 0.2);
+			transform: rotate(90deg);
+			margin-left: 25px;
+			width: 50px;
+		}
+	}
+}
+.price {
+	&__card {
+		font-family: $font-title;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 18px;
+		color: #333333;
+		height: 66px;
+	}
+}
+.card {
+	&__title {
+	}
+
+	&__discript {
+		font-family: $font-main;
+		font-weight: 400;
+		font-size: 12px;
+		color: rgba(51, 51, 51, 0.5);
+	}
+}
