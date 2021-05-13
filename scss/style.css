@@ -718,21 +718,45 @@ body {
   color: rgba(51, 51, 51, 0.5);
 }
 
-.delicious {
-  max-height: 920px;
-}
-
 .delicious__body {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.delicious__menu {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 864px) {
+  .delicious__menu {
+    flex-wrap: wrap;
+    max-width: 500px;
+  }
+}
+
 .delicious__price {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 100px;
-  padding: 0 0 100px 0;
+  grid-row-gap: 20px;
+  column-count: 3;
+  padding: 50px 0 100px 0;
+}
+
+@media (max-width: 1140px) {
+  .delicious__price {
+    grid-template-columns: 1fr 1fr;
+    column-count: 2;
+  }
+}
+
+@media (max-width: 728px) {
+  .delicious__price {
+    grid-template-columns: 1fr;
+    column-count: 1;
+  }
 }
 
 .menu__button {
@@ -741,15 +765,22 @@ body {
   background: none;
   cursor: pointer;
   width: 120px;
-  padding: 50px 0 50px 0;
+  text-align: center;
+  padding: 15px 30px;
+  display: block;
+  border: solid 1px white;
 }
 
 .menu__button:not(:last-child)::after {
   content: "";
-  border: 1px solid rgba(51, 51, 51, 0.2);
-  transform: rotate(90deg);
+  border-right: 1px solid rgba(51, 51, 51, 0.2);
   margin-left: 25px;
   width: 50px;
+}
+
+.menu__button:hover {
+  border: solid 1px black;
+  border-radius: 5px;
 }
 
 .price__card {
@@ -759,7 +790,6 @@ body {
   font-size: 18px;
   line-height: 18px;
   color: #333333;
-  height: 66px;
 }
 
 .card__discript {
