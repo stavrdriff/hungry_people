@@ -29,8 +29,8 @@
 </head>
 
 <body>
-	<<<<<<< HEAD <section class="restaurant">
-		<div class="container">
+	<section class="restaurant">
+		<div class="container restaurant__container">
 			<header class="header">
 				<nav class="nav">
 					<ul class="nav__list">
@@ -75,9 +75,9 @@
 					</a>
 				</div>
 			</div>
-			<a href="#about" class="restaurant__linkMore">
-				<span class="icon-chevron-down"></span>
-			</a>
+			<div class="restaurant__schedule_media">
+				<p class="restaurant__scheduleText_media">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
+			</div>
 			<div class="socials_media">
 				<a href="https://www.facebook.com/" title="Find us in Facebook" class="socials__circle">
 					<span class="icon-facebook"></span>
@@ -89,61 +89,62 @@
 					<span class="icon-instagram"></span>
 				</a>
 			</div>
-			<div class="restaurant__schedule_media">
-				<p class="restaurant__scheduleText_media">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
+
+			<a href="#about" class="restaurant__linkMore">
+				<span class="icon-chevron-down"></span>
+			</a>
+		</div>
+	</section>
+
+
+	<section id="about" class="about">
+		<div class="about__content">
+			<div class="about__text">
+				<h2 class="about__h2">about us</h2>
+				<div class="about__p">
+					<p class="about__p_first">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit
+						maximus,
+						molestie est a, tempor magna.</p>
+					<p class="about__p_second">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere.
+						Morbi
+						non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a
+						sollicitudin
+						lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper
+						laoreet.
+					</p>
+				</div>
+			</div>
+			<div class="containerImageRight">
+				<img class="containerImageRight__image_right" src="./img/about-img.jpg" alt="image_restaurant"
+					srcset="./img/about-img-md.jpg 980w, ./img/about-img-sm.jpg 768w">
+				<div class="containerImageRight__square_right"></div>
 			</div>
 		</div>
-		</section>
+	</section>
 
 
-		<section id="about" class="about">
-			<div class="about__content">
-				<div class="about__text">
-					<h2 class="about__h2">about us</h2>
-					<div class="about__p">
-						<p class="about__p_first">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit
-							maximus,
-							molestie est a, tempor magna.</p>
-						<p class="about__p_second">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere.
-							Morbi
-							non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a
-							sollicitudin
-							lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper
-							laoreet.
-						</p>
-					</div>
-				</div>
-				<div class="containerImageRight">
-					<img class="containerImageRight__image_right" src="./img/about-img.jpg" alt="image_restaurant"
-						srcset="./img/about-img-md.jpg 980w, ./img/about-img-sm.jpg 768w">
-					<div class="containerImageRight__square_right"></div>
-				</div>
+	<!-- OUR -->
+	<section class="our">
+
+		<!-- <div class="our__body"> -->
+		<!-- <div class="container"> -->
+		<h4 class="our__title restaurant__h4">OUR TEAM</h4>
+		<div class="our__wrap">
+
+			<div class="containerImageLeft">
+				<img src="img/Rectangle.jpg" alt="vegetables" class="containerImageLeft__image_left">
+				<div class="containerImageLeft__square_left"></div>
 			</div>
-		</section>
 
+			<div class="textRigth">
+				<h2 class="textRigth__title">MASTER CHEF</h2>
+				<p class="textRigth__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+					velit maximus, molestie est a, tempor magna.</p>
+				<p class="textRigth__text2">Integer ullamcorper neque eu purus euismod, ac faucibus mauris
+					posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio
+					vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis
+					pharetra. Nulla facilisis semper laoreet.</p>
 
-		<!-- OUR -->
-		<section class="our">
-
-			<!-- <div class="our__body"> -->
-			<div class="container">
-				<h4 class="our__title restaurant__h4">OUR TEAM</h4>
-				<div class="our__wrap">
-					<div class="containerImageLeft">
-						<img src="img/Rectangle.jpg" alt="vegetables" class="containerImageLeft__image_left">
-						<div class="containerImageLeft__square_left"></div>
-					</div>
-					<div class="textRigth">
-						<h2 class="textRigth__title">MASTER CHEF</h2>
-						<p class="textRigth__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
-							velit maximus, molestie est a, tempor magna.</p>
-						<p class="textRigth__text2">Integer ullamcorper neque eu purus euismod, ac faucibus mauris
-							posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio
-							vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis
-							pharetra. Nulla facilisis semper laoreet.</p>
-
-					</div>
-				</div>
 			</div>
 			<!-- </div> -->
 		</section>
@@ -153,30 +154,54 @@
 		<section id="booking" class="booking">
 			<div class="booking__main">
 				<div class="booking__table  booking__left">
-					<h2 class="booking__table_h2 booking__h2">book a table</h2>
+					<h2 class="booking__table_h2 booking__h2">book a table</h2>               
 					<div class="booking__table_grid booking__grid">
+                  
 						<div class="booking__table_item item__name">
-							<p class="item__text">Name</p>
+                     <input class="booking__table_input item__text" type="text" id="name" name="name" value="" placeholder="Name">
 						</div>
-						<div class="booking__table_item item__email">
-							<p class="item__text">Email</p>
+
+                  <div class="booking__table_item item__email">
+                     <input class="booking__table_input item__text" type="email" id="email" name="email" value="" placeholder="Email">
 						</div>
-						<div class="booking__table_item item__phone">
-							<p class="item__text">Phone</p>
-						</div>
-						<div class="booking__table_item item__people">
-							<p class="item__text">People</p>
-						</div>
-						<div class="booking__table_item item__date">
-							<p class="item__text">Date mm/dd</p>
-						</div>
+
+                  <div class="booking__table_item item__phone">
+                     <input class="booking__table_input item__text" type="phone" id="phone" name="phone" value="" placeholder="Phone">
+ 						</div>
+
+                   <div class="booking__table_item item__people">
+                     <form action="#">
+                        <select class="booking__table_input"  name="People" placeholder="People">
+                          <option class="booking__table_options" value="People"><span class="item__text">1</span></option>
+                          <option class="booking__table_options"  value="People">2</option>
+                          <option class="booking__table_options"  value="People">from 3 to 5</option>
+                          <option class="booking__table_options"  value="People">from 6 to 10</option>
+                          <option class="booking__table_options"  value="People">more 10</option>
+                        </select>
+                      </form>
+                      </div>
+						
+                  <div class="booking__table_item item__date">
+                     <input class="booking__table_input item__text" type="text" id="date" name="date" value="" placeholder="Date mm/dd">
+                     </div>
+
 						<div class="booking__table_item item__time">
-							<p class="item__text">Time</p>
+                     <form action="#">
+                        <select class="booking__table_input"  name="time" placeholder="Time">
+                          <option class="booking__table_options" value="Time">from 9.00 to 12.00</option>
+                          <option class="booking__table_options"  value="Time">from 12.00 to 15.00</option>
+                          <option class="booking__table_options"  value="Time">from 15.00 to 18.00</option>
+                          <option class="booking__table_options"  value="Time">from 18.00 to 21.00</option>
+                          <option class="booking__table_options"  value="Time">from 21.00 to 24.00</option>
+                        </select>
+                      </form>
 						</div>
-						<div class="booking__table_item item__book">
-							<p class="item__text item__text_last">Book now</p>
+
+						<div class="booking__table_item item__last">
+                     <input id="item__text_last" type="submit" value="Book now" placeholder="Book now">
 						</div>
 					</div>
+
 				</div>
 				<div class="containerImageRight">
 					<img class="containerImageRight__image_right" src="./img/booking-img-bg.jpg" alt="image_antique_clock"
@@ -184,11 +209,11 @@
 					<div class="booking__image_item containerImageRight__square_right"></div>
 				</div>
 			</div>
-			<div class="booking__footer">
-				<p class="booking__text"> Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM, Phone: +40 729 131 637/+40 726 458
-					782</p>
-			</div>
-		</section>
+	
+		<div class="booking__footer">
+			<p class="booking__text"> Mon - Fri: <span class="booking__number"> 8PM - 10PM,</span> Sat - Sun: <span class="booking__number">8PM - 3AM,</span> Phone: <span class="booking__number">+40 729 131 637/+40 726 458782</span></p>
+		</div>
+	</section>
 
 
 
