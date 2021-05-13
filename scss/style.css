@@ -771,16 +771,14 @@ body {
   border: solid 1px white;
 }
 
-.menu__button:not(:last-child)::after {
-  content: "";
-  border-right: 1px solid rgba(51, 51, 51, 0.2);
-  margin-left: 25px;
-  width: 50px;
-}
-
 .menu__button:hover {
   border: solid 1px black;
   border-radius: 5px;
+}
+
+.border {
+  border-right: 1px solid rgba(51, 51, 51, 0.2);
+  width: 2px;
 }
 
 .price__card {
