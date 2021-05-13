@@ -41,7 +41,7 @@
   text-transform: uppercase;
 }
 
-.restaurant__h4 {
+.restaurant__h4, .menu__button {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -691,7 +691,8 @@ body {
   }
 }
 
-.our, .specialties {
+.our,
+.specialties {
   background: url(../img/our-bg.jpg);
   width: 100%;
   background-repeat: no-repeat;
@@ -701,7 +702,8 @@ body {
   padding: 35px 5% 120px;
 }
 
-.our__wrap, .specialties__wrap {
+.our__wrap,
+.specialties__wrap {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -712,7 +714,8 @@ body {
 }
 
 @media (max-width: 980px) {
-  .our__wrap, .specialties__wrap {
+  .our__wrap,
+  .specialties__wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -723,7 +726,8 @@ body {
   }
 }
 
-.our__title, .specialties__title {
+.our__title,
+.specialties__title {
   margin-bottom: 35px;
 }
 
@@ -1029,5 +1033,66 @@ input[type="text"],
 
 .booking__number {
   font-weight: 700;
+}
+
+.delicious {
+  max-height: 920px;
+}
+
+.delicious__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.delicious__price {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 100px;
+  padding: 0 0 100px 0;
+}
+
+.menu__button {
+  color: #000000;
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: 120px;
+  padding: 50px 0 50px 0;
+}
+
+.menu__button:not(:last-child)::after {
+  content: "";
+  border: 1px solid rgba(51, 51, 51, 0.2);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin-left: 25px;
+  width: 50px;
+}
+
+.price__card {
+  font-family: "Dosis", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  color: #333333;
+  height: 66px;
+}
+
+.card__discript {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: rgba(51, 51, 51, 0.5);
 }
 /*# sourceMappingURL=style.css.map */
