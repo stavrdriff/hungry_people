@@ -777,7 +777,6 @@ input[type="text"],
 //delicious
 
 .delicious {
-   max-height: 920px;
    &__body {
       display: flex;
       flex-direction: column;
@@ -785,12 +784,28 @@ input[type="text"],
    }
 
    &__menu {
+      display: flex;
+      justify-content: center;
+      @media (max-width: 864px) {
+         flex-wrap: wrap;
+         max-width: 500px;
+      }
    }
    &__price {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-column-gap: 100px;
-      padding: 0 0 100px 0;
+      grid-row-gap: 20px;
+      column-count: 3;
+      padding: 50px 0 100px 0;
+      @media (max-width: 1140px) {
+         grid-template-columns: 1fr 1fr;
+         column-count: 2;
+      }
+      @media (max-width: 728px) {
+         grid-template-columns: 1fr;
+         column-count: 1;
+      }
    }
 }
 
@@ -802,18 +817,27 @@ input[type="text"],
       background: none;
       cursor: pointer;
       width: 120px;
-      padding: 50px 0 50px 0;
+      text-align: center;
+      padding: 15px 30px;
+      display: block;
+      border: solid 1px white;
+      // &:not(:last-child)::after {
+      // 	content: "";
+      // 	border-right: 1px solid rgba(51, 51, 51, 0.2);
+      // 	margin-left: 25px;
+      // 	width: 50px;
+      // }
+
       &:hover {
-         border: 1px solis #000;
-      }
-      &:not(:last-child)::after {
-         content: "";
-         border: 1px solid rgba(51, 51, 51, 0.2);
-         transform: rotate(90deg);
-         margin-left: 25px;
-         width: 50px;
+         border: solid 1px black;
+         border-radius: 5px;
       }
    }
+}
+.border {
+   border-right: 1px solid rgba(51, 51, 51, 0.2);
+   // margin-left: 25px;
+   width: 2px;
 }
 .price {
    &__card {
@@ -823,7 +847,6 @@ input[type="text"],
       font-size: 18px;
       line-height: 18px;
       color: #333333;
-      height: 66px;
    }
 }
 .card {
