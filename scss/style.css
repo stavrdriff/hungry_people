@@ -1106,20 +1106,25 @@ input[type="text"],
   border: none;
   background: none;
   cursor: pointer;
-  width: 120px;
   text-align: center;
-  padding: 15px 30px;
+  padding: 1.2em 2.1em;
+  text-indent: 0.3em;
   display: block;
   border: solid 1px white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .menu__button:hover {
-  border: solid 1px black;
+  border: solid 1px #e8c300;
   border-radius: 5px;
+  -webkit-box-shadow: 0 2px 15px #e8c300;
+          box-shadow: 0 2px 15px #e8c300;
 }
 
 .border {
   border-right: 1px solid rgba(51, 51, 51, 0.2);
+  margin: 0 5px;
   width: 2px;
 }
 

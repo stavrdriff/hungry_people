@@ -816,11 +816,13 @@ input[type="text"],
       border: none;
       background: none;
       cursor: pointer;
-      width: 120px;
+      // width: 120px;
       text-align: center;
-      padding: 15px 30px;
+      padding: 1.2em 2.1em;
+      text-indent: 0.3em;
       display: block;
       border: solid 1px white;
+      transition: 0.3s;
       // &:not(:last-child)::after {
       // 	content: "";
       // 	border-right: 1px solid rgba(51, 51, 51, 0.2);
@@ -829,14 +831,15 @@ input[type="text"],
       // }
 
       &:hover {
-         border: solid 1px black;
+         border: solid 1px $color_main;
          border-radius: 5px;
+         box-shadow: 0 2px 15px $color_main;
       }
    }
 }
 .border {
    border-right: 1px solid rgba(51, 51, 51, 0.2);
-   // margin-left: 25px;
+   margin: 0 5px;
    width: 2px;
 }
 .price {
